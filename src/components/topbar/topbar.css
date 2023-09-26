@@ -1,12 +1,13 @@
 .topbarContainer {
   height: 50px;
   width: 100%;
-  background-color: #1877f2;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .topbarLeft {
@@ -19,6 +20,7 @@
   font-weight: bold;
   color: white;
   cursor: pointer;
+  background-color: aqua;
 }
 
 .topbarCenter {
