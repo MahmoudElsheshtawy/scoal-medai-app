@@ -1,5 +1,6 @@
 .share {
   width: 100%;
+  background-color: rgb(255, 255, 255);
   height: 170px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
@@ -8,6 +9,7 @@
 
 .shareWrapper {
   padding: 10px;
+  
 }
 
 .shareTop {
@@ -40,6 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 .shareOptions{

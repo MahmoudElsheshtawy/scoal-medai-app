@@ -1,61 +1,100 @@
+/* eslint-disable jsx-a11y/alt-text */
 import "./sidebar.css";
-// import {
-//   RssFeed,
-//   Chat,
-//   PlayCircleFilledOutlined,
-//   Group,
-//   Bookmark,
-//   HelpOutline,
-//   WorkOutline,
-//   Event,
-//   School,
-// } from "@material-ui/icons";
+import Friends from "../../assets/1.png";
+import Groups from "../../assets/2.png";
+import Market from "../../assets/3.png";
+import Watch from "../../assets/4.png";
+import Memories from "../../assets/5.png";
+import Events from "../../assets/6.png";
+import Gaming from "../../assets/7.png";
+import Gallery from "../../assets/8.png";
+import Videos from "../../assets/9.png";
+import Messages from "../../assets/10.png";
+import Tutorials from "../../assets/11.png";
+import Courses from "../../assets/12.png";
+import Fund from "../../assets/13.png";
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
-
+import { Link } from "react-router-dom";
+import profile from '../../stories/profile.jpg'
+import { useContext } from "react";
+import {DarkModeContext } from "../../context/darkModeContext" 
 export default function Sidebar() {
+  const {dispatch} = useContext(DarkModeContext)
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
-        <ul className="sidebarList">
-          <li className="sidebarListItem">
-            {/* <RssFeed className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Feed</span>
-          </li>
-          <li className="sidebarListItem">
-            {/* <Chat className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Chats</span>
-          </li>
-          <li className="sidebarListItem">
-            {/* <PlayCircleFilledOutlined className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Videos</span>
-          </li>
-          <li className="sidebarListItem">
-            {/* <Group className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Groups</span>
-          </li>
-          <li className="sidebarListItem">
-            {/* <Bookmark className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Bookmarks</span>
-          </li>
-          <li className="sidebarListItem">
-            {/* <HelpOutline className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Questions</span>
-          </li>
-          <li className="sidebarListItem">
-            {/* <WorkOutline className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Jobs</span>
-          </li>
-          <li className="sidebarListItem">
-            {/* <Event className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Events</span>
-          </li>
-          <li className="sidebarListItem">
-            {/* <School className="sidebarIcon" /> */}
-            <span className="sidebarListItemText">Courses</span>
-          </li>
-        </ul>
-        <button className="sidebarButton">Show More</button>
+      <div className="item">
+      <Link to={"/Profile"} style={{display:'flex',textDecoration:'none',color:'#000'}}>
+          <img src={profile }className="topbarImg"/>
+          <span>Mahmoud_elsheshtawy</span>
+          </Link>
+            
+          </div>
+  
+      <div className="item">
+            <img src={Friends} alt="" />
+            <span>Friends</span>
+          </div>
+          <div className="item">
+            <img src={Groups} alt="" />
+            <span>Groups</span>
+          </div>
+          <div className="item">
+            <img src={Market} alt="" />
+            <span>Marketplace</span>
+          </div>
+          <div className="item">
+            <img src={Watch} alt="" />
+            <span>Watch</span>
+          </div>
+          <div className="item">
+            <img src={Memories} alt="" />
+            <span>Memories</span>
+          </div>
+        </div>
+        <hr />
+        <div className="menu" style={{alignItems:'center'}}>
+          <span style={{marginLeft:"10px"}}>Your shortcuts</span>
+          <div className="item">
+            <img src={Events} alt="" />
+            <span>Events</span>
+          </div>
+          <div className="item">
+            <img src={Gaming} alt="" />
+            <span>Gaming</span>
+          </div>
+          <div className="item">
+            <img src={Gallery} alt="" />
+            <span>Gallery</span>
+          </div>
+          <div className="item">
+            <img src={Videos} alt="" />
+            <span>Videos</span>
+          </div>
+          <div className="item">
+            <img src={Messages} alt="" />
+            <span>Messages</span>
+          </div>
+        </div>
+        <hr />
+        <div className="menu">
+          <span style={{marginLeft:"10px"}}>Others</span>
+          <div className="item">
+            <img src={Fund} alt="" />
+            <span>Fundraiser</span>
+          </div>
+          <div className="item">
+            <img src={Tutorials} alt="" />
+            <span>Tutorials</span>
+          </div>
+          <div className="item">
+            <img src={Courses} alt="" />
+            <span>Courses</span>
+          </div>
+        </div>
+      
+        <button onClick={() => dispatch({ type: "TOGGLE" })} className="sidebarButton">swich</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
           {Users.map((u) => (
@@ -63,6 +102,6 @@ export default function Sidebar() {
           ))}
         </ul>
       </div>
-    </div>
+   
   );
 }

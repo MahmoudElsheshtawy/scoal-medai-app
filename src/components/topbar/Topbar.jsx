@@ -9,11 +9,14 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
 import HomeIcon from '@mui/icons-material/Home';
 import profile from '../../stories/profile.jpg'
+import { Link } from "react-router-dom";
 export default function Topbar() {
   return (
     <div className="topbarContainer">
-      <div className="topbarLeft">
-        <span className="logo">sh</span>
+      <div className="topbarLeft" style={{display:"flex" ,alignItems:'center'}}>
+        <Link to={'/'} style={{textDecoration:'none' }} >
+        <span className="logo" style={{padding:'7px',fontSize:'27px',marginRight:'15px'}}>SH </span>
+        </Link>
         <div class="container-input">
           <input type="text" placeholder="Search" name="text" class="input"/>
            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +36,9 @@ export default function Topbar() {
       <div className="topbarRight">
        
      
-           <img src={profile }className="topbarImg"/>
+          <Link to={"/Profile"}>
+          <img src={profile }className="topbarImg"/>
+          </Link>
                   <NotificationsIcon className="icon-right"/>
                   <MessageIcon className="icon-right"/>
                   <AppsIcon className="icon-right"/>

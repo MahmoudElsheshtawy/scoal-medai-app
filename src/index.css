@@ -6,11 +6,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.hr{
+  color: #333;
+  background-color: #333;
+}
+
 /* search */
 .container-input {
   position: relative;
@@ -18,22 +22,34 @@ code {
 
 .input {
   width: 150px;
-  padding: 10px 0px 10px 40px;
+  padding: 5px 0px 5px 30px;
   border-radius: 9999px;
   border: solid 1px #333;
   transition: all .2s ease-in-out;
   outline: none;
   opacity: 0.8;
 }
-
 .container-input svg {
   position: absolute;
   top: 50%;
   left: 10px;
+  width: 16px;
   transform: translate(0, -50%);
 }
-
 .input:focus {
   opacity: 1;
   width: 250px;
 }
+/* dark moddo */
+ .app.dark{
+  background-color: #111111;
+   color: rgb(156,156,156);
+  
+  }
+  .app.dark .sidebarWrapper .item{
+    box-shadow: rgba(92, 92, 92, 0.24) 0px 3px 8px;
+    color: #c2c2c2;
+   }
+   .app.dark .topbarContainer{
+    background-color: #111111;
+   }
