@@ -6,12 +6,12 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import PermMediaIcon from '@mui/icons-material/PermMedia';
 export default function Share() {
   return (
-    <div className="share">
+    <div className="share" style={{marginTop:"2rem"}}>
       <div className="shareWrapper">
         <div className="shareTop">
           <img className="shareProfileImg" src="/assets/person/1.jpeg" alt="" />
           <input
-            placeholder="What's in your mind Safak?"
+            placeholder="What's in your mind Mahmoud?"
             className="shareInput"
           />
         </div>
