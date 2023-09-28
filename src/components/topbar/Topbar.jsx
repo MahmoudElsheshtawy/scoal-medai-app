@@ -15,7 +15,7 @@ export default function Topbar() {
     <div className="topbarContainer">
       <div className="topbarLeft" style={{display:"flex" ,alignItems:'center'}}>
         <Link to={'/'} style={{textDecoration:'none' }} >
-        <span className="logo" style={{padding:'7px',fontSize:'27px',marginRight:'15px'}}>SH </span>
+        <span className="logo" style={{padding:'7px',fontSize:'20px',marginRight:'15px'}}>SH </span>
         </Link>
         <div class="container-input">
           <input type="text" placeholder="Search" name="text" class="input"/>
@@ -24,24 +24,28 @@ export default function Topbar() {
              </svg>
 </div>
       </div>
-      <div className="topbarCenter">
-               <div className="icoon">
-                <HomeIcon className="icon-nav"/>
+      <div className="topbarCenter" style={{display:'flex',alignItems:'center',padding:'4px',position:'relative'}}>
+               <div className="icoon"style={{cursor:'pointer'}} >
+               <Link to={'/'} style={{textDecoration:'none'}}> <HomeIcon className="icon-nav"style={{textDecoration:'none',color:'blue'}}/></Link>
                 <OndemandVideoIcon className="icon-nav"/>
                 <StorefrontIcon className="icon-nav"/>
                 <GroupsIcon className="icon-nav"/>
                 <VideogameAssetIcon className="icon-nav"/>
                </div>
       </div>
-      <div className="topbarRight">
+      <div className="topbarRight" style={{ display:'flex' ,alignItems:'center',justifyContent:'flex-end'}}>
        
      
-          <Link to={"/Profile"}>
-          <img src={profile }className="topbarImg"/>
-          </Link>
-                  <NotificationsIcon className="icon-right"/>
+          
+                 <div className="r" style={{ color:'#000',display:'flex' ,alignItems:'center',justifyContent:'flex-end',marginRight:'20px'}}>
+                 <NotificationsIcon className="icon-right"/>
                   <MessageIcon className="icon-right"/>
                   <AppsIcon className="icon-right"/>
+                  <Link to={"/Profile"}>
+                     <img src={profile }className="topbarImg" alt="my-profile"/>
+               </Link>
+                 </div>
+                
         </div>
          
     

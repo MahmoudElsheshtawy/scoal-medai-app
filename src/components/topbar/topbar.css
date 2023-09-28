@@ -97,4 +97,39 @@
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+  
+}
+
+.icoon .icon-nav{
+  font-size: 25px;
+  /* margin: 0 50px; */
+  padding: 6px 50px;
+  transition: .4s ease-in-out;
+}
+.icoon .icon-nav:hover{
+  background-color: rgb(243, 242, 242);
+  color: blue;
+  border-radius: 5px;
+}
+.icon-right{
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+  .icoon .icon-nav{
+    font-size: 24px;
+    margin: 0 30px;
+  }
 }

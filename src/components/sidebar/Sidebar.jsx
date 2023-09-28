@@ -23,16 +23,16 @@ export default function Sidebar() {
   const {dispatch} = useContext(DarkModeContext)
   return (
     <div className="sidebar">
-      <div className="sidebarWrapper">
-      <div className="item">
+      <div className="sidebarWrapper" style={{borderBottom:'1px solid #aaa'}}>
+      <div className="item" >
       <Link to={"/Profile"} style={{display:'flex',textDecoration:'none',color:'#000'}}>
           <img src={profile }className="topbarImg"/>
-          <span>Mahmoud_elsheshtawy</span>
+          <span className="m">Mahmoud_elsheshtawy</span>
           </Link>
             
           </div>
   
-      <div className="item">
+      <div className="item" >
             <img src={Friends} alt="" />
             <span>Friends</span>
           </div>
@@ -53,8 +53,8 @@ export default function Sidebar() {
             <span>Memories</span>
           </div>
         </div>
-        <hr />
-        <div className="menu" style={{alignItems:'center'}}>
+        {/* <hr className="hr"/> */}
+        <div className="menu" style={{alignItems:'center',borderBottom:'1px solid #aaa'}} >
           <span style={{marginLeft:"10px"}}>Your shortcuts</span>
           <div className="item">
             <img src={Events} alt="" />
@@ -77,8 +77,9 @@ export default function Sidebar() {
             <span>Messages</span>
           </div>
         </div>
-        <hr />
-        <div className="menu">
+        {/* <hr className="hr"/> */}
+
+        <div className="menu"style={{borderBottom:'1px solid #aaa'}}>
           <span style={{marginLeft:"10px"}}>Others</span>
           <div className="item">
             <img src={Fund} alt="" />
@@ -92,11 +93,14 @@ export default function Sidebar() {
             <img src={Courses} alt="" />
             <span>Courses</span>
           </div>
+          <button onClick={() => dispatch({ type: "TOGGLE" })} className="sidebarButton">swich</button>
+          <Link to={'/Login'}><button className="sidebarButton"> loge-out</button></Link>
         </div>
       
-        <button onClick={() => dispatch({ type: "TOGGLE" })} className="sidebarButton">swich</button>
-        <hr className="sidebarHr" />
-        <ul className="sidebarFriendList">
+        
+        {/* <hr className="hr"/> */}
+
+        <ul className="sidebarFriendList" style={{marginLeft:'-25px'}}>
           {Users.map((u) => (
             <CloseFriend key={u.id} user={u} />
           ))}

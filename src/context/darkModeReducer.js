@@ -12,7 +12,7 @@ const DarkModeReducer = (state, action) => {
 
 export default DarkModeReducer;
 // in app
-{/* <div className={darkMode ? "app dark" : "app"}>  */}
+  // className={darkMode ? "app dark" : "app"}
 // const { darkMode } = useContext(DarkModeContext);
 // import { DarkModeContext } from "./context/darkModeContext";
 // import { useContext } from "react";

@@ -42,14 +42,57 @@ code {
 }
 /* dark moddo */
  .app.dark{
-  background-color: #111111;
+  background-color: #191919;
    color: rgb(156,156,156);
   
   }
   .app.dark .sidebarWrapper .item{
-    box-shadow: rgba(92, 92, 92, 0.24) 0px 3px 8px;
-    color: #c2c2c2;
+    /* box-shadow: rgba(92, 92, 92, 0.24) 0px 3px 8px; */
+    color: #e2e2e2;
+    background-color: #191919;
+
    }
    .app.dark .topbarContainer{
-    background-color: #111111;
+    background-color: #191919;
    }
+   .app.dark .menu .item{
+      color: #e2e2e2;
+      font-size: 14px;
+      background-color: #191919;
+
+  }
+  .app.dark .m{
+    color: #fff;
+  }
+ 
+    /* textColor: whitesmoke,
+    bg: #222,
+    logo: white,
+    bgSoft: #333,
+    textColorSoft: lightgray,
+    border: #444, */
+
+.app.dark .feed{
+  flex:7;
+  background-color:#222;}
+.app.dark .share {
+  background-color: rgb(24, 23, 23);
+}
+.app.dark .shareInput {
+background-color:transparent;
+color: #fff;
+}
+.app.dark .post {
+  transition: .3s ease-in-out;
+  background-color: rgb(24, 23, 23);
+}
+.app.dark .hr{
+  background-color: rgb(4, 4, 4);
+  color: rgb(20, 20, 20);
+}
+.app.dark .feeds{
+  background-color:#222;
+}
+.app.dark .icon-right{
+  color: #fff;
+}
