@@ -4,12 +4,14 @@ import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import AddLocationIcon from '@mui/icons-material/AddLocation';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import PermMediaIcon from '@mui/icons-material/PermMedia';
+import profile from '../../stories/profile.jpg';
+
 export default function Share() {
   return (
     <div className="share" style={{marginTop:"2rem"}}>
       <div className="shareWrapper">
         <div className="shareTop">
-          <img className="shareProfileImg" src="/assets/person/1.jpeg" alt="" />
+          <img className="shareProfileImg" src={profile}alt="" />
           <input
             placeholder="What's in your mind Mahmoud?"
             className="shareInput"
