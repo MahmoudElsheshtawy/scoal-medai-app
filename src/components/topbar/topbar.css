@@ -8,7 +8,6 @@
   justify-content: space-between;
   top: 0;
   z-index: 999;
-
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .topbarRight .menu{
@@ -45,7 +44,6 @@ margin-right: 200px;
   outline: none;
 }
 .topbarRight {
-  /* flex: 4; */
   display: flex;
   align-items: center;
   justify-content: space-around;
