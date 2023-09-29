@@ -77,3 +77,69 @@
     border-bottom: 1px dashed gray;
     font-size: 15px;
 }
+/* heart.css */
+.containerr input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.containerr {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.containerr svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  transition: all 0.3s;
+  fill: #666;
+}
+
+.containerr svg:hover {
+  transform: scale(1.1);
+}
+
+.containerr input:checked ~ svg {
+  fill: #E3474F;
+}
+/* like css */
+.containerrr input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.containerrr {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.containerrr svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  transition: all 0.3s;
+  fill: #666;
+}
+
+.containerrr svg:hover {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+.containerrr input:checked ~ svg {
+  fill: #2196F3 ;
+}

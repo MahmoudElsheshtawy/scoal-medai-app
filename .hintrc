@@ -3,6 +3,8 @@
     "development"
   ],
   "hints": {
-    "compat-api/css": "off"
+    "compat-api/css": "off",
+    "detect-css-reflows/paint": "off",
+    "detect-css-reflows/composite": "off"
   }
 }
