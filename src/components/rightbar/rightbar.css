@@ -83,3 +83,15 @@
   /* object-fit: cover; */
   border-radius: 5px;
 }
+@media screen and (max-width:1000px) {
+  .right-bar {
+  flex: 0;
+  display: none;
+  }
+  .rightbar {
+    flex: 0;
+  display: none;
+  }
+
+  
+}

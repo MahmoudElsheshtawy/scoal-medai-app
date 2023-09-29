@@ -5,13 +5,19 @@
   display: flex;
   align-items: center;
   position: sticky;
+  justify-content: space-between;
   top: 0;
   z-index: 999;
+  /* overflow: hidden; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+.topbarRight .menu{
+  display: none;
 }
 
 .topbarLeft {
-  flex: 3;
+  /* flex: 3; */
 }
 
 .logo {
@@ -21,12 +27,13 @@
   color: white;
   cursor: pointer;
   border-radius: 50%;
-  background-color: blue;
+  background-color: #0c6bf3;
     
 }
 
 .topbarCenter {
-  flex: 5;
+margin-right: 200px;
+/* background-color: aqua; */
 }
 
 .searchbar {
@@ -53,7 +60,7 @@
 }
 
 .topbarRight {
-  flex: 4;
+  /* flex: 4; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -99,37 +106,123 @@
   cursor: pointer;
   
 }
-
+.icoon {
+  /* background-color: rgb(227, 147, 50); */
+  width: 100%;
+  display: flex;
+  
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+}
 .icoon .icon-nav{
   font-size: 25px;
-  /* margin: 0 50px; */
-  padding: 6px 50px;
+  height: 50px;
+  display: flex;
+  margin: 0 50px;
+  justify-content: center;
   transition: .4s ease-in-out;
 }
 .icoon .icon-nav:hover{
-  background-color: rgb(243, 242, 242);
-  color: blue;
+  color: #0c6bf3;
   border-radius: 5px;
 }
 .icon-right{
   margin-right: 10px;
 }
+.r{
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
 
+@media screen and (max-width:860px) {
+
+  
+  .icoon {
+    /* background-color: rgb(227, 147, 50); */
+    width: 100%;
+    display: flex;
+ 
+    justify-content:center;
+    align-items: center;
+  }
+  .input{
+    display: none;
+  }
+  .iconsearch{
+    background-color: rgb(229, 229, 229);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: -19px;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width:1057px) {
+
+  .topbarCenter {
+    margin-right: 0px;
+    /* background-color: aqua; */
+    }
 
 
-
-
-
-
-
-
-
-
+}
 
 @media screen and (max-width:1200px) {
   .icoon .icon-nav{
     font-size: 24px;
     margin: 0 30px;
   }
+}
+@media screen and (max-width:755px) {
+  .icoon .icon-nav{
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+
+}
+@media screen and (max-width:570px) {
+  .icoon .icon-nav{
+    font-size: 24px;
+    margin: 0 5px;
+  }
+
+
+}
+@media screen and (max-width:478px) {
+  .topbarRight .menu{
+    display: block;
+    color: black;
+    margin-right: 10px;
+  }
+  .topbarRight{
+    /* background-color: #0c6bf3; */
+   
+   
+  }
+ .r{
+    position: absolute;
+  
+    top: 60px;
+    left: -100%;
+    padding: 2rem;
+    transition: .4s ease-in-out;
+    
+
+
+
+
+
+    display: block;
+    background-color: rgb(246, 246, 246);
+  }
+  .r.active{
+    left: 0;
+  }
+
 }

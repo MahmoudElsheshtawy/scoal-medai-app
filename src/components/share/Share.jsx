@@ -5,13 +5,14 @@ import AddLocationIcon from '@mui/icons-material/AddLocation';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import PermMediaIcon from '@mui/icons-material/PermMedia';
 import profile from '../../stories/profile.jpg';
+import { Link } from "react-router-dom";
 
 export default function Share() {
   return (
     <div className="share" style={{marginTop:"2rem"}}>
       <div className="shareWrapper">
         <div className="shareTop">
-          <img className="shareProfileImg" src={profile}alt="" />
+         <Link to={'/profile'}> <img className="shareProfileImg" src={profile}alt="" /></Link>
           <input
             placeholder="What's in your mind Mahmoud?"
             className="shareInput"

@@ -34,8 +34,8 @@ const Stores = () => {
  <div className="stories">
  <div className="story">
                <img src={profile} alt="" />
-                <span>Mahmoud</span> 
-               <button>+</button>
+                <span>Owner</span> 
+               <button className='blus'>+</button>
              </div> 
        
              

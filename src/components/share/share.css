@@ -79,3 +79,19 @@
     cursor: pointer;
     color: white;
 }
+@media screen and (max-width:570px) {
+.shareOptions{
+  flex-wrap: wrap;
+}
+
+}
+@media screen and (max-width:437px) {
+
+  .share {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 190px;
+    overflow: hidden;
+  }
+  
+  }

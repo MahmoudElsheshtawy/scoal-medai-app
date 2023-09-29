@@ -11,7 +11,7 @@ import user10 from '../../stories/user10.jpg'
 export default function Rightbar({ profile }) {
   const HomeRightbar = () => {
     return (
-      <>
+      <div className="right-bar">
         <div className="birthdayContainer">
           <img className="birthdayImg" src="assets/gift.png" alt="" />
           <span className="birthdayText">
@@ -25,7 +25,7 @@ export default function Rightbar({ profile }) {
             <Online key={u.id} user={u} />
           ))}
         </ul>
-      </>
+      </div>
     );
   };
 

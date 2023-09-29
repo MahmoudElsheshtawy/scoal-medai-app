@@ -65,8 +65,8 @@ column;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -133,4 +133,13 @@ column;
 /* button click effect*/
 .Btn:active {
   transform: translate(2px ,4px);
+}
+@media screen and (max-width:769px) {
+
+  .sidebar{
+    display: none;
+  }
+
+
+
 }

@@ -4,4 +4,12 @@
 }
 .feeds{
     background-color:#f2f1f1;
+
 }
+@media screen and (max-width:570px) {
+    .feeds{
+        /* width: 320px; */
+        /* background-color:#d10f0f; */
+    }
+  
+  }
