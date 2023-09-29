@@ -93,7 +93,7 @@ export default function Sidebar() {
             <img src={Courses} alt="" />
             <span>Courses</span>
           </div>
-           <button onClick={() => dispatch({ type: "TOGGLE" })} className="sidebarButton">swich</button>
+           
          <div className="side-buttom" style={{margin:'10px'}}>
          {/* <button onClick={() => dispatch({ type: "TOGGLE" })} className="sidebarButton">swich</button> */}
           <Link to={'/Login'}><button class="Btn">
