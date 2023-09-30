@@ -1,5 +1,4 @@
 import "./share.css";
-// import {PermMedia, Label,Room, EmojiEmotions} from "@material-ui/icons"
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import AddLocationIcon from '@mui/icons-material/AddLocation';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';

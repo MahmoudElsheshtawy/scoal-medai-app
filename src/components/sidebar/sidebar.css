@@ -134,12 +134,42 @@ column;
 .Btn:active {
   transform: translate(2px ,4px);
 }
+.show{
+  display: none;
+}
 @media screen and (max-width:769px) {
 
   .sidebar{
-    display: none;
+    /* display: none; */
+    position: absolute;
+    z-index: 1000;
+    background-color: rgb(252, 252, 252);
+    top: 60px;
+    height: 100%;
+    left: -100%;
+    transition: .3s ease-in-out;
+  }
+  .app.dark .sidebar{
+    background-color: rgb(23, 23, 23);
+  }
+  .sidebar.active{
+    left:30px;
+    
   }
 
-
+  .show{
+    display: block;
+    position:absolute;
+    top: 180px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 0 50% 50% 0;
+    z-index: 1000;
+    font-size: 24px;
+    cursor: pointer;
+    
+  }
+  .app.dark .show{
+    background-color: rgb(38, 38, 38);
+  } 
 
 }

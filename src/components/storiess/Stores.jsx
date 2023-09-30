@@ -23,7 +23,7 @@ const Stores = () => {
     {
       id: 4,
       name: "lebleba",
-      img: "https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=600lazy=load",
+      img: "https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
 
   ];
@@ -31,7 +31,7 @@ const Stores = () => {
   return (
  <>
 
- <div className="stories">
+ <div className="stories" id="top" >
  <div className="story">
                <img src={profile} alt="" />
                 <span>Owner</span> 

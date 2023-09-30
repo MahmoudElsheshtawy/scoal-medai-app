@@ -14,7 +14,10 @@ code {
   color: #333;
   background-color: #333;
 }
-
+*{
+  scroll-snap-align:start;
+  scroll-behavior: smooth;
+}
 /* search */
 .container-input {
   position: relative;
